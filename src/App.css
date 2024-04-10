@@ -1,0 +1,162 @@
+body {
+  background-color: #000;
+  color: #2b0a0a38;
+}
+
+.gradiant-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap; 
+  animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+  width: 0;
+  width: max-content;
+  display: inline-block;
+}
+
+@keyframes typing-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 354px;
+  }
+}
+
+@keyframes typing-text {
+  to {
+    border-color: transparent;
+  }
+}
+#root {
+  max-width: auto;
+  margin: 0 auto;
+  
+}
+
+/* App.css */
+
+/* Light Mode Styles */
+body {
+  background-color: #27050517;
+  color: #000000;
+  margin: 0;
+}
+
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #1a202c;
+  color: #ffffff;
+
+  
+}
+.dark-mode p.text-black {
+  color: #000000; /* Adjust the color to your preference */
+}
+
+.dark-mode p.text-b{
+  color:#000000;
+}
+/* App.css */
+
+/* ... (other styles) ... */
+
+.dark-footer {
+  background-color: #1a202c; /* Dark mode background color */
+  color: #ffffff; /* Dark mode text color */
+}
+
+.dark-links {
+  color: #ffffff; /* Dark mode link color */
+}
+
+.dark-mode{
+  color: #ffffff;
+}
+
+.dark-mode-button:hover {
+  color: #000000; /* Change to your desired hover color in light mode */
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode label{
+  color: white;
+  
+}
+
+/* Inside your stylesheet */
+@keyframes typingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-text::after {
+  content: "";
+  animation: typingAnimation 2s steps(40, end) infinite;
+}
+.start-typing::after {
+  content: "";
+  animation: typingAnimation 2s steps(40, end) infinite;
+}
+
+/* Add animation class to elements */
+.animate__animated {
+  animation-duration: 50s;
+  animation-fill-mode: both;
+}
+@keyframes drop {
+  50%, 50% {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.falling-ball-item {
+  animation: drop 20s ease-out infinite; /* Increase the duration for slower speed */
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333333;
+    color: #ffffff;
+  }
+}
+/* styles.css */
+.blurred-background {
+  backdrop-filter: blur(10px); /* Adjust the blur strength */
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and transparency */
+}
+
+
+
+/* Add more delays as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
